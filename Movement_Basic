@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movement_Basic : MonoBehaviour //numeste script ul "Movement_Basic"
+
+
+{
+     public Rigidbody rb; // nu uita sa conectezi Rigidbody-ul corpui
+    
+         void Update() {
+        
+         if (Input.GetKey(KeyCode.A)) // pentru stanga
+             rb.AddForce(Vector3.left);
+             
+         if (Input.GetKey(KeyCode.D)) // pentru dreapta
+             rb.AddForce(Vector3.right);
+
+         if (Input.GetKey(KeyCode.W)) // pentru fata
+             rb.AddForce(Vector3.forward);
+
+         if (Input.GetKey(KeyCode.S)) // pentru spate
+             rb.AddForce(Vector3.back);
+         }
+}
