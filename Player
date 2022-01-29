@@ -8,10 +8,10 @@ public class Player : MonoBehaviour // Obiectul caruia ii se atribuie scriptul t
     private float _moveSpeed = 5f;
 
     [SerializeField]
-    private float _gravity = 9.81f;    //nu mai trebuie RigidBody in obiect ca componenta
+    private float _gravity = 10f;    //nu mai trebuie RigidBody in obiect ca componenta
 
     [SerializeField]
-    private float _jumpSpeed = 3.5f;
+    private float _jumpSpeed = 4f;
 
     [SerializeField]
     private float _doubleJumpMultiplier = 0.5f;
